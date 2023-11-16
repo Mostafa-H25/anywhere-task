@@ -1,0 +1,35 @@
+@import "../components/dropdown";
+
+.message-dropdown-list {
+  right: 0;
+  width: 280px;
+  .message-dropdown-link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    img {
+      flex: 0 0 30px;
+      background: black;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      padding: 5px;
+    }
+    .user-title {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      height: 30px;
+      h4 {
+        font-weight: bold;
+      }
+      p {
+        color: $grey-color;
+      }
+    }
+    &:hover {
+      background: rgba($primary-accent-color, 0.5);
+      color: $secondary-accent-color;
+    }
+  }
+}

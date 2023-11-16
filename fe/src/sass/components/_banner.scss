@@ -1,0 +1,77 @@
+.banner {
+  background: $white-color url("./src/assets/imgs/banner-bg.png") top right/24%
+    no-repeat;
+  margin-bottom: 20px;
+  border-radius: 15px;
+  padding: 20px;
+  @media #{$md} {
+    background: $white-color url("./src/assets/imgs/banner-bg.png") bottom
+      right/20% no-repeat;
+  }
+  .banner-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    @media #{$lg} {
+      width: 60%;
+      align-items: start;
+    }
+    h2 {
+      width: fit-content;
+      margin-bottom: 15px;
+      background: $primary-color;
+      background: -moz-linear-gradient(
+        145deg,
+        $primary-color 0%,
+        $primary-accent-color 100%
+      );
+      background: -webkit-linear-gradient(
+        145deg,
+        $primary-color 0%,
+        $primary-accent-color 100%
+      );
+      background: linear-gradient(
+        145deg,
+        $primary-color 0%,
+        $primary-accent-color 100%
+      );
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-size: $text-4xl;
+      font-weight: bold;
+    }
+    p {
+      color: #777;
+      margin-bottom: 10px;
+      text-align: center;
+      @media #{$lg} {
+        text-align: start;
+      }
+    }
+    q {
+      display: block;
+      margin: 10px 0;
+      color: $grey-color;
+      text-align: center;
+      @media #{$lg} {
+        text-align: start;
+      }
+    }
+    button {
+      width: 240px;
+      background: $primary-accent-color;
+      border-radius: 10px;
+      border: none;
+      outline: none;
+      padding: 10px 20px;
+      color: $white-color;
+      letter-spacing: 1px;
+      font-size: $text-lg;
+      font-weight: bold;
+      cursor: pointer;
+    }
+  }
+}

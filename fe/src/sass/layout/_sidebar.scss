@@ -1,0 +1,67 @@
+.sidebar {
+  display: flex;
+  background: $primary-color;
+  background: -moz-linear-gradient(
+    145deg,
+    $primary-color 0%,
+    $primary-accent-color 100%
+  );
+  background: -webkit-linear-gradient(
+    145deg,
+    $primary-color 0%,
+    $primary-accent-color 100%
+  );
+  background: linear-gradient(
+    145deg,
+    $primary-color 0%,
+    $primary-accent-color 100%
+  );
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0;
+  @media #{$md} {
+    position: fixed;
+    left: 0;
+    width: 280px;
+    height: 100vh;
+  }
+  .brand {
+    width: 100%;
+    margin-bottom: 20px;
+    text-align: center;
+    color: white;
+    font-family: "Trebuchet MS", sans-serif;
+    font-size: $text-3xl;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  .links-container {
+    width: 100%;
+    padding: 20px 0;
+    .link {
+      width: 100%;
+      cursor: pointer;
+      a {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        padding: 30px 20px;
+        color: white;
+        font-size: $text-xl;
+        font-weight: bold;
+        letter-spacing: 2px;
+        &:hover {
+          color: $primary-accent-color;
+          background: white;
+        }
+        .active {
+        }
+        .icon {
+          padding: 0 20px;
+          line-height: 1px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,103 @@
+@import "../layout/navigation";
+.hero {
+  width: 100vw;
+  height: 100vh;
+  background: $primary-color;
+  background: -moz-linear-gradient(
+    145deg,
+    $primary-color 0%,
+    $primary-accent-color 100%
+  );
+  background: -webkit-linear-gradient(
+    145deg,
+    $primary-color 0%,
+    $primary-accent-color 100%
+  );
+  background: linear-gradient(
+    145deg,
+    $primary-color 0%,
+    $primary-accent-color 100%
+  );
+  .hero-cover {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: $white-color;
+    h2 {
+      font-size: $text-7xl;
+      text-align: center;
+      em {
+        display: block;
+        font-size: $text-9xl;
+        background-color: $secondary-color;
+        background-image: -moz-linear-gradient(
+          145deg,
+          $secondary-color 0%,
+          $secondary-accent-color 100%
+        );
+        background-image: -webkit-linear-gradient(
+          145deg,
+          $secondary-color 0%,
+          $secondary-accent-color 100%
+        );
+        background-image: linear-gradient(
+          145deg,
+          $secondary-color 0%,
+          $secondary-accent-color 100%
+        );
+        background-size: 500% 500%;
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: hallucinate 4s ease-in-out infinite alternate;
+        @media #{$md} {
+          display: inline;
+          font-size: $text-8xl;
+        }
+      }
+    }
+
+    h3 {
+      font-size: $text-4xl;
+      text-align: center;
+    }
+  }
+}
+
+@-moz-keyframes hallucinate {
+  0% {
+    background-position: 0% 0%;
+  }
+  25% {
+    background-position: 0% 100%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  75% {
+    background-position: 100% 0%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
+@keyframes hallucinate {
+  0% {
+    background-position: 0% 0%;
+  }
+  25% {
+    background-position: 0% 100%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  75% {
+    background-position: 100% 0%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}

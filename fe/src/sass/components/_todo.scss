@@ -1,0 +1,65 @@
+@import "../components/filter-dropdown";
+.side-container {
+  flex: 0 0 280px;
+  height: fit-content;
+  background: $white-color;
+  border-radius: 15px;
+  padding: 10px;
+  .container-title {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .filter {
+      color: $primary-accent-color;
+      cursor: pointer;
+    }
+  }
+  p {
+    color: #777;
+    font-size: $text-sm;
+  }
+  .tasks-list {
+    .task {
+      padding: 10px 0;
+      border-bottom: 1px solid $grey-accent-color;
+      text-transform: capitalize;
+      .task-title {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+      }
+      .task-content {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        .col {
+          display: flex;
+          flex-direction: column;
+          gap: 2px;
+          p {
+            color: $grey-color;
+            font-size: $text-base;
+          }
+        }
+      }
+      button {
+        width: 100%;
+        background: $white-color;
+        margin: 10px 0;
+        border-radius: 10px;
+        border: 2px solid $primary-accent-color;
+        outline: none;
+        padding: 10px 20px;
+        color: $primary-accent-color;
+        font-size: $text-base;
+        text-transform: capitalize;
+        cursor: pointer;
+        &:hover {
+          background: rgba($primary-accent-color, 0.2);
+          color: $secondary-accent-color;
+        }
+      }
+    }
+  }
+}

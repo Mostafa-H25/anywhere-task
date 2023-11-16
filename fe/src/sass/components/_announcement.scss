@@ -1,0 +1,59 @@
+.main-container {
+  flex: 1 1 auto;
+  height: fit-content;
+  background: $white-color;
+  border-radius: 15px;
+  padding: 10px;
+  p {
+    color: #777;
+    font-size: $text-sm;
+  }
+  .announcements-list {
+    .announcement {
+      display: flex;
+      flex-direction: column;
+      margin: 10px 0;
+      padding: 10px;
+      &:nth-child(even) {
+        background: $grey-accent-color;
+      }
+      @media #{$lg} {
+        flex-direction: row;
+      }
+      .user-data {
+        display: flex;
+        gap: 10px;
+        padding: 5px 10px 5px 0;
+        text-transform: capitalize;
+        @media #{$lg} {
+          flex: 0 0 230px;
+        }
+        img {
+          flex: 0 0 60px;
+          background: black;
+          width: 50px;
+          height: 50px;
+          border-radius: 50%;
+          padding: 5px;
+        }
+        .user-title {
+          display: flex;
+          flex-direction: column;
+          line-height: 25px;
+          h4 {
+            font-weight: bold;
+          }
+          p {
+            color: $grey-color;
+          }
+        }
+      }
+      .announcement-text {
+        flex: 1 1 auto;
+        border-left: 1px solid $grey-color;
+        padding: 5px 0 5px 10px;
+        color: $grey-color;
+      }
+    }
+  }
+}

@@ -1,0 +1,5 @@
+.menu-dropdown {
+  @media #{$md} {
+    display: none;
+  }
+}

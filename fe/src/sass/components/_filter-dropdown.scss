@@ -1,0 +1,15 @@
+@import "../components/dropdown";
+
+.filter-dropdown-list {
+  right: 0;
+  width: 120px;
+  .filter-dropdown-link {
+    color: $primary-accent-color;
+    font-size: $text-sm;
+    text-align: center;
+    &:hover {
+      background: rgba($primary-accent-color, 0.5);
+      color: $secondary-accent-color;
+    }
+  }
+}

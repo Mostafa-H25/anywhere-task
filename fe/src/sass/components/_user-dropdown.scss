@@ -1,0 +1,16 @@
+@import "../components/dropdown";
+
+.user-dropdown-list {
+  right: 0;
+  width: 160px;
+  .user-dropdown-link {
+    color: $primary-accent-color;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 1px;
+    &:hover {
+      background: rgba($primary-accent-color, 0.5);
+      color: $secondary-accent-color;
+    }
+  }
+}

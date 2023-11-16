@@ -1,0 +1,14 @@
+@import "../components/dropdown";
+
+.notification-dropdown-list {
+  right: 0;
+  width: 280px;
+  .notification-dropdown-link {
+    font-size: $text-base;
+    color: #777;
+    &:hover {
+      background: rgba($primary-accent-color, 0.5);
+      color: $secondary-accent-color;
+    }
+  }
+}

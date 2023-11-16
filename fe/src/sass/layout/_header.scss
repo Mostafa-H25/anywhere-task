@@ -1,0 +1,59 @@
+@import "../components/user-dropdown";
+@import "../components/notification-dropdown";
+@import "../components/message-dropdown";
+.header {
+  background: $white-color;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 20px 20px 20px;
+  @media #{$md} {
+    padding: 20px 20px 20px 40px;
+  }
+  .mobile-menu {
+    line-height: 1px;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    &:hover {
+      background: rgba($grey-color, 0.5);
+    }
+    @media #{$md} {
+      display: none;
+    }
+  }
+  h1 {
+    color: $grey-color;
+    font-size: $text-3xl;
+    font-weight: bold;
+    @media #{$md} {
+      font-size: $text-2xl;
+    }
+  }
+  .nav-left {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    .icons-list {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      .icon {
+        position: relative;
+        line-height: 1px;
+        cursor: pointer;
+        .navbar-button {
+          background: transparent;
+          outline: none;
+          border: 1px solid $primary-accent-color;
+          border-radius: 5px;
+          padding: 5px 15px;
+          cursor: pointer;
+          &:hover {
+            background: rgba($primary-accent-color, 0.2);
+          }
+        }
+      }
+    }
+  }
+}

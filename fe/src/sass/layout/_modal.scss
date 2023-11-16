@@ -1,0 +1,59 @@
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  background: rgba($black-color, 0.5);
+  .modal-card {
+    width: 800px;
+    max-height: 680px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: $grey-accent-color;
+    padding: 20px;
+    border-radius: 15px;
+    .modal-title {
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    .modal-paragraph {
+      margin-bottom: 10px;
+      color: #777;
+      text-align: center;
+    }
+    .modal-buttons {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 5px;
+      .modal-button {
+        border: none;
+        outline: none;
+        border-radius: 5px;
+        padding: 5px 10px;
+        color: $white-color;
+        font-size: $text-lg;
+        font-weight: bold;
+        cursor: pointer;
+      }
+      .button-info {
+        background: $info-color;
+        &:hover {
+          background: $info-accent-color;
+        }
+      }
+      .button-danger {
+        background: $danger-color;
+        &:hover {
+          background: $danger-accent-color;
+        }
+      }
+    }
+  }
+}
